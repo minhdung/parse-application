@@ -1,5 +1,7 @@
 ParseApplication::Application.routes.draw do
 
+  root :to => 'landing'
+
   get '/landing' => 'Pages#landing', :as => 'landing'
 
   get '/firststep' => 'Pages#firststep', :as => 'firststep'
