@@ -1,4 +1,4 @@
-== This ails app let's a person fill out a form and send it to Parse as JSON ==
+== This rails app let's a person fill out a form and send it to Parse as JSON
 
 
 PARSE'S APPLICATION INSTRUCTIONS (Copied and Pasted 11-29-12)
