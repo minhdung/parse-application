@@ -1,0 +1,19 @@
+<H1> Fill in the following info: </h1>
+
+<%= form_tag('/create') do %>
+  <%= label_tag(:name, "String with your name (required)") %><br>
+  <%= text_field_tag(:name) %><br>
+
+  <%= label_tag(:email, "String with your email address (required") %><br>
+  <%= text_field_tag(:email) %><br>
+
+  <%= label_tag(:position, "String with the position you're applying for (required)") %><br>
+  <%= text_field_tag(:position) %><br>
+
+  <%= label_tag(:about, "String describing why you think Parse is a great fit for you (required") %><br>
+  <%= text_field_tag(:about) %><br><br>
+
+  
+  <%= submit_tag("To Step 2") %>
+<% end %>
+

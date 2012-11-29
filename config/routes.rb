@@ -2,7 +2,17 @@ ParseApplication::Application.routes.draw do
 
   get '/landing' => 'Pages#landing', :as => 'landing'
 
-  get '/new' => 'Pages#new', :as => 'new'
+  get '/firststep' => 'Pages#firststep', :as => 'firststep'
+
+  post '/create' => 'Pages#create', :as => 'create'
+
+  #get '/firststep', {:controller=>"pages", :action=>"firststep"}, :as => 'firststep'
+
+  get '/add_urls' => 'Pages#add_urls', :as => 'add_urls'
+
+  get '/new_url' => 'Pages#new_url', :as => 'new_url'
+
+  post '/create_url' => 'Pages#create_url'
 
   get '/json' => 'Pages#json', :as => 'json'
 

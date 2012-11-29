@@ -1,0 +1,20 @@
+<h1> Now add some links to your projects: </h1>
+
+<b>Name:</b><%= @app.name %><br>
+<b>Email:</b><%= @app.email %><br>
+<b>Position:</b><%= @app.position %><br>
+<b>About:</b><%= @app.about %><br>
+
+<br><br>
+
+<%= link_to "Add link", new_url_path, id: "add_url_link", remote: true %>
+
+<ul id="added_urls">
+
+
+</ul>
+
+
+<h3>All done? See it rendered as json <h3>
+
+<%= link_to "Render as JSON", json_url %>
